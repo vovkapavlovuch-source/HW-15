@@ -1,0 +1,51 @@
+.holder
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item:nth-child(1)
+{
+   order: -5;
+   background-color: red;
+   flex-grow: 1;
+}
+
+.item:nth-child(2)
+{
+   order: -2;
+   background-color: cornflowerblue;
+}
+
+.item:nth-child(3)
+{
+   order: -3;
+   background-color: purple;
+}
+
+.item:nth-child(4)
+{
+   order: -1;
+   background-color: green;
+}
+
+.item:nth-child(5)
+{
+   order: -4;
+   background-color: orange;
+   flex-grow: 1;
+}
+
+.item
+{
+    height: 50px;
+    flex-basis: calc((100% - 30px) / 2);
+    outline: solid red 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
